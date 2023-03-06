@@ -16,6 +16,7 @@ dependencies {
 
     bitwuzlaNative("bitwuzla", "bitwuzla-linux64", "1.0", ext = "zip")
     bitwuzlaNative("bitwuzla", "bitwuzla-win64", "1.0", ext = "zip")
+    bitwuzlaNative("bitwuzla", "bitwuzla-abc", "1.0", ext = "zip")
 }
 
 tasks.withType<KotlinCompile> {
