@@ -28,6 +28,7 @@ dependencies {
 }
 
 tasks.withType<ProcessResources> {
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
     dependsOn.addAll(z3Binaries)
     z3Binaries.forEach { z3BinaryTask ->
         from(z3BinaryTask.outputFiles) {
